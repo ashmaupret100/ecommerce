@@ -16,7 +16,7 @@ function Register() {
     }
 
     axios
-      .post("http://localhost:3000/", {
+      .post("http://localhost:3000/users", {
         email,
         password,
         // confirmpassword,

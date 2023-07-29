@@ -19,6 +19,16 @@
       "email": "dipa@gmail.com",
       "password": "$2a$10$HBqlI3/OMVIc9Wen9bWnwunAmc2jo2NN6FiAYDTG1A3J9Xb/MgP76",
       "id": 4
+    },
+    {
+      "email": "yogibaba@gmail.com",
+      "password": "$2a$10$204ocEHwwRaoue9Pw.y88uue7fxDMlG8CQpSfijl9iqLA9x/iy0xS",
+      "id": 5
+    },
+    {
+      "email": "yogi@gmail.com",
+      "password": "$2a$10$ignbSqHKnURggLkEGc4mGeTg4dN8kiPzZgu0kbgXiJIM9mnNvgOty",
+      "id": 6
     }
   ],
   "products": [
