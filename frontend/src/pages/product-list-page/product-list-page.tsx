@@ -28,7 +28,7 @@ function ProductList() {
   return (
     <>
       <Container />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 m-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-20">
         {data.map((product) => (
           <div className="flex flex-col bg-white border rounded-lg shadow-md p-4">
             <div className="w-full h-48 mb-4">

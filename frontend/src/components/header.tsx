@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <>
-      <div className="bg-green-800 text-slate-100 p-1 flex align-center justify-center">
+      <div className="bg-green-800 text-slate-100 p-1 flex align-center justify-center text-xs">
         Get 50% Off On Selected Items | Shop Now
       </div>
     </>

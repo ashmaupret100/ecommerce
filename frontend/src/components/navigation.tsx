@@ -13,7 +13,7 @@ function Navigation() {
       <div>Delivery</div>
       <div className="flex bg-slate-200 rounded-xl">
         <input
-          className="bg-slate-200 ml-2 rounded-xl"
+          className="bg-slate-200 ml-2 rounded-xl border border-transparent focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
           type="text"
           name="search"
           id="search-bar"
