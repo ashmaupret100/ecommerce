@@ -26,11 +26,12 @@ function ProductList() {
     console.log(data);
   }, [data]);
   return (
-    <>
-      <Container />
+    <Container>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-20">
-        {data.map((product) => (
-          <div className="flex flex-col bg-white border rounded-lg shadow-md p-4">
+        {data.map((product, index) => (
+          <div
+            key={`div_${index}_${product.id}`}
+            className="flex flex-col bg-white border rounded-lg shadow-md p-4">
             <div className="w-full h-48 mb-4">
               <img
                 src={product.image}
@@ -55,7 +56,7 @@ function ProductList() {
           </div>
         ))}
       </div>
-    </>
+    </Container>
   );
 }
 

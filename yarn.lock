@@ -3519,6 +3519,11 @@ react-router@6.14.2:
   dependencies:
     "@remix-run/router" "1.7.2"
 
+react-simple-image-slider@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-simple-image-slider/-/react-simple-image-slider-2.4.1.tgz#ba80e5741b32a531110cb3811ed9f76e3eee88f8"
+  integrity sha512-9T/WjsRThJup43QxzH202rLVNqaUK9P8izTiWOfLcc5w3QygU44a9IQUuIwGYiXtWvw2spRRGLRc5Xd62/vfDg==
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -4275,6 +4280,11 @@ uuid@3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
+
+uuid@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
+  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 uuidv4@2.0.0:
   version "2.0.0"

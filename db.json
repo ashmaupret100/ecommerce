@@ -29,6 +29,11 @@
       "email": "yogi@gmail.com",
       "password": "$2a$10$ignbSqHKnURggLkEGc4mGeTg4dN8kiPzZgu0kbgXiJIM9mnNvgOty",
       "id": 6
+    },
+    {
+      "email": "ash@gmail.com",
+      "password": "$2a$10$7wDVe82IlvOkvEqkMgsCtujsy3om8wTeqc47Oe2LJaFg4E789fBj6",
+      "id": 7
     }
   ],
   "products": [
