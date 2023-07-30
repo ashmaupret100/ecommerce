@@ -1,20 +1,34 @@
 import Container from "../../components/container";
-import Header from "../../components/header";
-import Slider from "../../components/sliders";
 
 function Homepage() {
   return (
     <>
       <Container>
-        <Slider />
-        <div className="absolute right-60 top-40 ">
-          <button>Shop Now</button>
-          <button className="bg-green-700 border border-transparent rounded-full py-2 px-4 text-black hover:bg-green-800 hover:text-white text-sm">
-            Add To Cart
-          </button>
+        <div className="relative">
+          {/* Image */}
+
+          <div
+            className="bg-cover bg-center w-full h-96"
+            style={{
+              backgroundImage:
+                "url(https://images.unsplash.com/photo-1519415943484-9fa1873496d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)",
+            }}>
+            {/* Content goes here */}
+          </div>
+
+          {/* Overlapping div */}
+          <div className="absolute left-60 top-60">
+            <div className="flex flex-col">
+              <p className="text-xl font-bold text-green-800">
+                Grab Upto 50% Off on Selected Items
+              </p>
+              <button className="bg-green-700 text-white border border-transparent rounded-full py-1 px-2 text-sm mt-2 hover:bg-green-800 hover:text-white w-auto">
+                Shop Now
+              </button>
+            </div>
+          </div>
         </div>
       </Container>
-      <div className="bg-red-100">Homepage</div>
     </>
   );
 }
