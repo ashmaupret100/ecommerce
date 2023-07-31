@@ -47,11 +47,7 @@ const ProductDetailPage = () => {
       <div className="flex items-center justify-center p-8">
         {/* Product Image */}
         <div className="w-1/2">
-          <img
-            src="path_to_your_image.jpg"
-            alt="Product"
-            className="w-full rounded-lg"
-          />
+          <img src={data?.image} alt="Product" className="w-full rounded-lg " />
         </div>
 
         {/* Product Description and Add to Cart Button */}

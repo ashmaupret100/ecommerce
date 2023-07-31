@@ -17,7 +17,7 @@ function Homepage() {
 
           {/* Overlapping div */}
           <div className="absolute left-60 top-60">
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-20 mr-80">
               <p className="text-xl font-bold text-green-800">
                 Grab Upto 50% Off on Selected Items
               </p>
