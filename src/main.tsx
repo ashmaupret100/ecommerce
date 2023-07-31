@@ -8,6 +8,8 @@ import ProductListPage from "./pages/product-list-page/product-list-page.tsx";
 import Register from "./pages/register/register.tsx";
 import Login from "./pages/login/login.tsx";
 import ErrorPage from "./pages/error-page/error-page.tsx";
+import Cart from "./pages/cart-page/cart-page.tsx";
+import Protected from "./components/protected-routes.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/error",
     element: <ErrorPage />,
+  },
+  {
+    path: "/cart",
+    element: (
+      <Protected>
+        <Cart />
+      </Protected>
+    ),
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
