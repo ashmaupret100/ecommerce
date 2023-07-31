@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <>
       <Container>
-        <div className="relative">
+        <div>
           {/* Image */}
 
           <div
