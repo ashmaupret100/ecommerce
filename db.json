@@ -39,6 +39,26 @@
       "email": "upreti@gmail.com",
       "password": "$2a$10$/bYjgvc0TFvzM9TKTYrfmO7FaferszHmXPKLcKy/mizpDbFBeXwey",
       "id": 8
+    },
+    {
+      "email": "ashu@gmail.com",
+      "password": "$2a$10$RRyFamwM7kU8hKHr2hWIf.XQ5ER/fxFb1BQLaSPwF8qH.D3yOKS2q",
+      "id": 9
+    },
+    {
+      "email": "sos@gmail.com",
+      "password": "$2a$10$IcDt9XPy5skANik439U4h.dI314YbmEKiiv2lxlajvR74rp6TU2vy",
+      "id": 10
+    },
+    {
+      "email": "poo@gmail.com",
+      "password": "$2a$10$F/em6.aM2JD.6MaJpWKSburOl4W3LZ7KqxwZ.atydiqrGtx64L3km",
+      "id": 11
+    },
+    {
+      "email": "po@gmail.com",
+      "password": "$2a$10$93522g38ioUYYc4YI3/IjuFp8nEUis0AgdyexiR10jbJnBptV/Z1C",
+      "id": 12
     }
   ],
   "products": [

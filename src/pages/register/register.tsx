@@ -1,78 +1,69 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import { AiFillFacebook, AiFillGoogleCircle } from "react-icons/ai";
-import { FaInstagramSquare } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import Container from "../../components/container";
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [confirmpassword, setConfrimpassword] = useState("");
-  console.log("email");
-  console.log("password");
+  const navigate = useNavigate();
 
   const registerUser = (e) => {
     e.preventDefault();
     if (email && password) {
-      toast.success(" Successfully created an account");
+      toast.success("Successfully created an account");
     }
 
     axios
       .post("http://localhost:3000/users", {
         email,
         password,
-        // confirmpassword,
       })
       .then((response) => {
         console.log(response);
-
         localStorage.setItem("token", response.data.accessToken);
+        navigate("/signin");
       })
       .catch((e) => {
         toast.error(e.response.data);
       });
   };
+
   return (
-    <div className="flex flex-col h-screen w-full bg-green-200 justify-evenly items-center">
-      <div className="flex flex-col justify-center items-center h-3/6 w-1/5 bg-gray-500 box-border border-4 border-grey-200 rounded ">
-        <form className="flex flex-col justify-center items-center">
-          <Toaster />
-          <h1 className="text-2xl items-center"> Sign Up</h1>
-          <label className="ml-3"> Email</label>
+    <Container>
+      <form className="max-w-sm mx-auto mt-20 p-4 bg-white shadow-md rounded">
+        <Toaster />
+        <h1 className="text-2xl font-bold mb-4">Sign Up</h1>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700">
+            Email
+          </label>
           <input
-            className="rounded bg-slate-200 p-1"
+            className="mt-1 p-1 rounded bg-gray-100 w-full"
             type="text"
             placeholder="Enter your email"
             onChange={(e) => setEmail(e.target.value)}
           />
-
-          <label> Password </label>
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700">
+            Password
+          </label>
           <input
-            className="rounded bg-slate-200 p-1"
-            type="text"
+            className="mt-1 p-1 rounded bg-gray-100 w-full"
+            type="password"
             placeholder="Enter your password"
             onChange={(e) => setPassword(e.target.value)}
           />
-
-          {/* <label> Confirm password</label>
-      <input
-        className="ml-4 rounded bg-slate-200 p-1"
-        type="text"
-        placeholder="Re-enter your password"
-        onChange={(e) => setConfirmpassword(e.target.value)}
-      /> */}
-
-          <button className="rounded bg-blue-600 w-32" onClick={registerUser}>
-            Register
-          </button>
-        </form>
-        <div> Or Sign Up Using</div>
-        <div className="flex flex-row items-center">
-          <FaInstagramSquare size={25} /> <AiFillFacebook size={25} />{" "}
-          <AiFillGoogleCircle size={25} />
         </div>
-      </div>
-    </div>
+        <button
+          className="w-full mt-2 px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800"
+          onClick={registerUser}>
+          Register
+        </button>
+      </form>
+    </Container>
   );
 }
 
