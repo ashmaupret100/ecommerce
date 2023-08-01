@@ -39,6 +39,11 @@
       "email": "upreti@gmail.com",
       "password": "$2a$10$/bYjgvc0TFvzM9TKTYrfmO7FaferszHmXPKLcKy/mizpDbFBeXwey",
       "id": 8
+    },
+    {
+      "email": "ashu@gmail.com",
+      "password": "$2a$10$RRyFamwM7kU8hKHr2hWIf.XQ5ER/fxFb1BQLaSPwF8qH.D3yOKS2q",
+      "id": 9
     }
   ],
   "products": [

@@ -4,6 +4,7 @@ import { BsCart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import DropMenu from "./drop-category";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const [showModal, setShowModal] = useState(false);
@@ -12,7 +13,9 @@ function Navigation() {
   }
   return (
     <div className="flex justify-evenly p-2 mb-3">
-      <div>Khudra Pasal</div>
+      <Link to="/">
+        <strong>Khudra Pasal</strong>
+      </Link>
       <div className="flex relative">
         <div>Categories</div>
         <RiArrowDropDownLine
@@ -35,12 +38,17 @@ function Navigation() {
           <CiSearch />
         </div>
       </div>
-      <div className="p-1">
-        <VscAccount />
-      </div>
-      <div className="p-1">
-        <BsCart />
-      </div>
+      <Link to="/register">
+        <div className="p-1">
+          <VscAccount />
+        </div>
+      </Link>
+
+      <Link to="/cart">
+        <div className="p-1">
+          <BsCart />
+        </div>
+      </Link>
     </div>
   );
 }
