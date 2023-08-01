@@ -44,6 +44,11 @@
       "email": "ashu@gmail.com",
       "password": "$2a$10$RRyFamwM7kU8hKHr2hWIf.XQ5ER/fxFb1BQLaSPwF8qH.D3yOKS2q",
       "id": 9
+    },
+    {
+      "email": "sos@gmail.com",
+      "password": "$2a$10$IcDt9XPy5skANik439U4h.dI314YbmEKiiv2lxlajvR74rp6TU2vy",
+      "id": 10
     }
   ],
   "products": [
