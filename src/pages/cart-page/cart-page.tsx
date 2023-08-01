@@ -22,6 +22,7 @@ const Cart = () => {
                 <li key={item.id} className="mb-4">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
+                  <p>${item.price}</p>
                 </li>
               ))}
             </ul>
