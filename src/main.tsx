@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// import Switch from "react-router-dom";
 import Homepage from "./pages/home-page/home-page.tsx";
 import ProductDetailPage from "./pages/product-detail-page/product-detail-page.tsx";
 import ProductListPage from "./pages/product-list-page/product-list-page.tsx";
@@ -33,16 +34,16 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/error",
-    element: <ErrorPage />,
-  },
-  {
     path: "/cart",
     element: (
       <Protected>
         <Cart />
       </Protected>
     ),
+  },
+  {
+    path: "/errorpage",
+    element: <ErrorPage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
