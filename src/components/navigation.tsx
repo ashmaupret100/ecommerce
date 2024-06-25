@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { VscAccount } from "react-icons/vsc";
 import { BsCart } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";

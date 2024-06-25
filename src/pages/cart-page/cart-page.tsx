@@ -1,13 +1,14 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import Container from "../../components/container";
 
 const Cart = () => {
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  const cartItems = useSelector((state: any) => state.cart.cartItems);
 
   // Calculate the total price of items in the cart
   const getTotalAmount = () => {
-    return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
+    return cartItems
+      .reduce((total: any, item: any) => total + item.price, 0)
+      .toFixed(2);
   };
 
   return (
@@ -18,7 +19,7 @@ const Cart = () => {
           <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
           {cartItems.length > 0 ? (
             <ul>
-              {cartItems.map((item) => (
+              {cartItems.map((item: any) => (
                 <li key={item.id} className="mb-4">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>

@@ -59,6 +59,16 @@
       "email": "po@gmail.com",
       "password": "$2a$10$93522g38ioUYYc4YI3/IjuFp8nEUis0AgdyexiR10jbJnBptV/Z1C",
       "id": 12
+    },
+    {
+      "email": "ashmaupt@gmail.com",
+      "password": "$2a$10$PcvYQKVAagxiOeoUFm6aPOKXq4IhFoaFs12M23sLeGyEAB0h8fJIS",
+      "id": 13
+    },
+    {
+      "email": "ashmau@gmail.com",
+      "password": "$2a$10$BxrfpBjKulqIabUxzeITA.xwDglcYLRf7uP9JnjpbIveYo1IbodOK",
+      "id": 14
     }
   ],
   "products": [

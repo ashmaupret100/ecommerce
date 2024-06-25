@@ -88,7 +88,7 @@ function Login() {
   const [isLoggingIn, setIsLoggingIn] = useState(false); // To track the login process
   const navigate = useNavigate();
 
-  function loginUser(e) {
+  function loginUser(e: any) {
     e.preventDefault();
 
     if (!email) {
@@ -118,7 +118,7 @@ function Login() {
       })
       .catch((error) => {
         // Display an error toast if the login attempt fails
-        toast.error(error.response.data.message);
+        toast.error("error", error.response.data.message);
       })
       .finally(() => {
         setIsLoggingIn(false); // Finish the login process

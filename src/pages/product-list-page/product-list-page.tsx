@@ -1,16 +1,15 @@
 import axios from "axios";
-import React from "react";
 import { useState, useEffect } from "react";
 import Container from "../../components/container";
 import { IProduct } from "./type";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 function ProductList() {
   const [data, setData] = useState<IProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  console.log(loading);
+  console.log(error);
   useEffect(() => {
     // Fetching data from axios
     axios
