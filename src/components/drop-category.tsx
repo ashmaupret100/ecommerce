@@ -1,5 +1,3 @@
-import React from "react";
-
 const category_list = [
   "men's Clothing",
   "women's Clothing",

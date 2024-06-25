@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../../components/container";
 import { useParams } from "react-router-dom";
 import { IProduct } from "../product-list-page/type";
@@ -15,6 +15,8 @@ const ProductDetailPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   console.log(data);
+  console.log(loading);
+  console.log(error);
 
   const handleAddToCart = () => {
     if (data) {

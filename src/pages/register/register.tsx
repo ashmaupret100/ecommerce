@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const registerUser = (e) => {
+  const registerUser = (e: any) => {
     e.preventDefault();
     if (email && password) {
       toast.success("Successfully created an account");
